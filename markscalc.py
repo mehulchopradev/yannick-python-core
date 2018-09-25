@@ -9,12 +9,17 @@ marks = float(input('enter marks : '))
 
 # if - elif - elif - * - else
 if marks > 100 or marks < 0:
-    print('I')
+    g = 'I'
 elif marks >= 70:
-    print('A')
+    g = 'A'
 elif marks >= 60:
-    print('B')
+    g = 'B'
 elif marks >= 40:
-    print('C')
+    g = 'C'
 else:
-    print('F')
+    g = 'F'
+
+# scope of variable g is the entire file
+# scope of variables in python is never block scoped. Either entire file or the function
+
+print(g)
