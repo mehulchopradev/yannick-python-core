@@ -1,0 +1,5 @@
+- Mysql/Mariadb database server downloaded and set up
+- Play around with the installed database server from point 1, download a
+database viewing software. Mysql workbench
+- interfacing our python program with mysql database
+  - MYSQL Connector/Python
