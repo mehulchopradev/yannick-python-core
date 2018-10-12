@@ -1,0 +1,42 @@
+- Client                - Server
+  - Request (data)        - Request get the data
+                          - process the data
+                          - send the processed value in the response
+  - Collect the value
+  from the response
+
+  Web
+  - HTTP <- TCP/IP
+
+- Web Client (Web browser)  - Web Server
+  - Request (form data)       - Send HTML response to the client
+  - Could understand html,
+  parse the html, display
+  the web page
+
+  - Android/IOS (native apps),
+  Desktop apps
+
+- Web Services (Platform independent client)
+  - Web server service/api endpoint
+  - send data; rather than presentation with data
+
+  TCP/IP -> HTTP -> SOAP (Web services) - XML
+
+  Philosophy -> Ingrains HTTP in its fundamentals -> REST
+
+  REST
+  - Resources (books, authors, publications, students, professors, librarians,..). Unique resource id.
+  Database auto increment id, or something unique about that resource
+  - Resources can be manipulated (CRUD)
+  - Client manipulate a resource
+    - URL
+    - HTTP Method
+
+  - Creating a book - /books - POST - Create a new book
+  - Get the books - /books - GET - Get all the books from wherever
+  - Get a book - /books/<resource id of that book> - GET
+                /books/1
+                /books/10
+  - Update a book - /books/<resource id of that book> - PUT / PATCH
+  - Delete a book - /books/<resource id of that book> - DELETE
